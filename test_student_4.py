@@ -3,6 +3,14 @@ from student_4 import Student
 
 
 class TestStudent(unittest.TestCase):
+    
+    @classmethod
+    def setUpClass(cls):
+        print('setUpClass')
+    
+    @classmethod
+    def tearDownClass(cls):
+        print('tearDownClass')
 
     def setUp(self):
         print('set up')
